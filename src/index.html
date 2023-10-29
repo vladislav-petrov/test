@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css-compiled/base.css">
+    <link rel="stylesheet" href="./css-compiled/header.css">
+    <link rel="stylesheet" href="./css-compiled/hero.css">
+    <link rel="stylesheet" href="./css-compiled/chart.css">
+    <link rel="stylesheet" href="./css-compiled/slider.css">
+    <link rel="stylesheet" href="./css-compiled/queries.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="header__nav">
+          <ul class="header__nav-list" lang="ru">
+            <li><a class="header__nav-link" href="#">Главная</a></li>
+            <li><a class="header__nav-link" href="#">Продукты</a></li>
+            <li><a class="header__nav-link" href="#">Кейсы</a></li>
+            <li><a class="header__nav-link" href="#">Экспертное мнение</a></li>
+            <li><a class="header__nav-link" href="#">Контакты</a></li>
+          </ul>
+
+          <a class="header__nav-link btn" href="#">Запросить презентацию</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="wrapper container-hero">
+          <header class="header-hero">
+            <img class="header-hero__logo" src="./img/logo.svg" alt="Logo" />
+            <h1 class="header-hero__heading">AI-Driven Analytics Platform</h1>
+          </header>
+
+          <div class="feature-description-hero">
+            <img
+              class="feature-icon"
+              src="./img/icons/icon-data.svg"
+              alt="Data processing icon"
+            />
+
+            <h3 class="feature-heading" lang="ru">Обработка данных</h3>
+
+            <p class="feature-text" lang="ru">
+              Мы помогаем клиентам подобрать необходимые источники данных. Валидируем и верифицируем их. Приводим их к единому формату и классификатору.
+            </p>
+          </div>
+
+          <div class="feature-list-hero">
+            <div class="feature">
+              <img
+                class="feature-icon"
+                src="./img/icons/icon-analysis.svg"
+                alt="Analysis icon"
+              />
+
+              <h3 class="feature-heading" lang="ru">Анализ</h3>
+            </div>
+
+            <div class="feature">
+              <img
+                class="feature-icon"
+                src="./img/icons/icon-visualization.svg"
+                alt="Visualization icon"
+              />
+
+              <h3 class="feature-heading" lang="ru">Визуализация</h3>
+            </div>
+
+            <div class="feature">
+              <img
+                class="feature-icon"
+                src="./img/icons/icon-interpretation.svg"
+                alt="Interpretation icon"
+              />
+
+              <h3 class="feature-heading" lang="ru">Интерпретация</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-chart">
+        <div class="wrapper container-chart">
+          <div class="left-pane-chart">
+            <h2 class="section-heading" lang="ru">
+              Промо-давление<br />увеличивается
+            </h2>
+
+            <div class="pane-chart">
+              <canvas id="chart"></canvas>
+            </div>
+
+            <a class="pane-link btn" href="#" lang="ru">Почему увеличивается?</a>
+          </div>
+
+          <div class="right-pane-chart">
+            <h2 class="section-heading" lang="ru">
+              80% данных не используется<br />производителями
+            </h2>
+
+            <img class="pane-image" src="./img/chart-image.png" alt="Thinking man" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-slider">
+        <div class="wrapper container-slider">
+          <h2 class="section-heading" lang="ru">
+            Собираем и обрабатываем<br />гранулярные данные на уровне сети
+          </h2>
+
+          <div class="swiper slider-content">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-header">
+                  <img class="header-img img-one" src="./img/icons/icon-one.svg" alt="One" />
+                  <h3 class="header-heading" lang="ru">Обработка данных</h3>
+                </div>
+
+                <div class="slide-one-content">
+                  <div class="slide-one-content__row">
+                    <img
+                      class="slide-one-content__row-image"
+                      src="./img/icons/icon-analysis.svg"
+                      alt="Algorithms"
+                    />
+
+                    <p class="slide-one-content__row-text" lang="ru">
+                      Мы используем точные алгоритмы и машинное обучение
+                    </p>
+                  </div>
+
+                  <div class="slide-one-content__row">
+                    <img
+                      class="slide-one-content__row-image"
+                      src="./img/icons/icon-data.svg"
+                      alt="Information"
+                    />
+
+                    <p class="slide-one-content__row-text" lang="ru">
+                      Консолидируем, проверяем, визуализируем и интерпретируем информацию
+                    </p>
+                  </div>
+
+                  <div class="slide-one-content__row">
+                    <img
+                      class="slide-one-content__row-image"
+                      src="./img/icons/icon-recommendations.svg"
+                      alt="Recommendations"
+                    />
+
+                    <p class="slide-one-content__row-text" lang="ru">
+                      Разрабатываем рекомендации для эффективной промо-стратегии и тактических решений
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="slider-header">
+                  <img class="header-img img-two" src="./img/icons/icon-two.svg" alt="Two" />
+                  <h3 class="header-heading" lang="ru">Преобразование данных</h3>
+                </div>
+
+                <div class="slide-two-content">
+                  <div class="slide-two-content__column">
+                    <p class="slide-two-content__column-text" lang="ru">Ежемесячные</p>
+                    <p class="slide-two-content__column-text" lang="ru">Сырые данные</p>
+                    <p class="slide-two-content__column-text" lang="ru">Промо/<br />регулярные</p>
+                    <p class="slide-two-content__column-text" lang="ru">Дистрибуция</p>
+                  </div>
+
+                  <div class="slide-two-content__column">
+                    <img class="slide-two-content__column-image" src="./img/icons/icon-arrow.svg" alt="Arrow"/>
+                    <img class="slide-two-content__column-image" src="./img/icons/icon-arrow.svg" alt="Arrow"/>
+                    <img class="slide-two-content__column-image" src="./img/icons/icon-arrow.svg" alt="Arrow"/>
+                    <img class="slide-two-content__column-image" src="./img/icons/icon-arrow.svg" alt="Arrow"/>
+                  </div>
+
+                  <div class="slide-two-content__column">
+                    <p class="slide-two-content__column-text" lang="ru">Еженедельные</p>
+                    <p class="slide-two-content__column-text" lang="ru">Промо/<br />регулярные</p>
+                    <p class="slide-two-content__column-text" lang="ru">Базовые/<br />инкрементальные</p>
+                    <p class="slide-two-content__column-text" lang="ru">Конкретное<br />окружение</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/chart.js"></script>
+    <script type="module" src="./js/slider.js"></script>
+  </body>
+</html>

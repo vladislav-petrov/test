@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "swiper": "^11.0.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.1"
+  }
+}

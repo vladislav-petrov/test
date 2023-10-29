@@ -1,0 +1,83 @@
+$font-stack: 'Roboto', sans-serif;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$primary-color: #ffffff;
+$secondary-color: #e01e2e;
+$tertiary-color: #141515;
+
+@mixin font-settings($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin flex-container($flex-direction, $justify-content, $align-items, $gap) {
+  display: flex;
+
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  gap: $gap;
+}
+
+@mixin background($width, $height, $z-index, $url) {
+  content: '';
+  position: absolute;
+  width: $width;
+  height: $height;
+  z-index: $z-index;
+  background: center / cover $url;
+}
+
+@mixin separator {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 8px;
+  margin-bottom: 20px;
+  background: center / cover url('../img/icons/icon-separator.svg');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: $font-regular 16px / 1.8 $font-stack;
+}
+
+nav {
+  ul {
+    list-style: none;
+  }
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $primary-color;
+  font-weight: $font-medium;
+}
+
+.wrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 14px 48px;
+  background-color: $secondary-color;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: $font-bold;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  color: $tertiary-color;
+}

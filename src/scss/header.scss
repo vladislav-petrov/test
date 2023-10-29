@@ -1,0 +1,44 @@
+@use 'base';
+
+
+$header-margin-top: 30px;
+$background-top-height: 990px;
+$background-bottom-height: 160px;
+
+@mixin background($height, $z-index, $url) {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: $height;
+  z-index: $z-index;
+  background: center / cover $url;
+}
+
+.header {
+  position: relative;
+  margin-top: $header-margin-top;
+}
+
+.header::before {
+  margin-top: -$header-margin-top;
+
+  @include base.background(100%, $background-top-height, -2, url('../img/hero-background-top.png'));
+}
+
+.header::after {
+  top: $background-top-height - $background-bottom-height - $header-margin-top;
+
+  @include base.background(100%, $background-bottom-height, -1, url('../img/hero-background-bottom.svg'));
+}
+
+.header__nav {
+  @include base.flex-container(row, space-between, center, 0);
+
+  .header__nav-list {
+    @include base.flex-container(row, flex-start, flex-start, 54px);
+  }
+
+  .header__nav-link {
+    font-size: 18px;
+  }
+}

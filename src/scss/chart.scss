@@ -1,0 +1,36 @@
+@use 'base';
+@use 'header';
+
+
+.section-chart {
+  margin-top: header.$background-bottom-height + 50px;
+
+  .container-chart {
+    max-width: 1230px;
+
+    @include base.flex-container(row, flex-start, flex-start, 30px);
+
+    .pane-chart {
+      position: relative;
+      height: 300px;
+      margin-bottom: 80px;
+    }
+
+    .pane-link {
+      font-size: 20px;
+    }
+
+    .pane-image {
+      width: 100%;
+    }
+  }
+}
+
+.left-pane-chart {
+  width: 48%;
+}
+
+.left-pane-chart::before,
+.right-pane-chart::before {
+  @include base.separator;
+}
